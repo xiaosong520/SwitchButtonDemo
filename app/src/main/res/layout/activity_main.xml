@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.switchbuttondemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="是否接受消息通知"
+                android:textColor="@android:color/black"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关闭将不接收系统推送消息、角标提醒"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="20dp"/>
+
+        </LinearLayout>
+
+        <com.switchbuttondemo.SwitchButton
+            android:id="@+id/switchButton"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            app:borderWidth="0.8dp"
+            app:offBorderColor="@color/light_gray"
+            app:offColor="@color/common_white"
+            app:onColor="@color/common_light_blue"
+            app:spotColor="@color/common_white"
+            app:animate="true"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

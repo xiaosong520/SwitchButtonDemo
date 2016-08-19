@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 白色 -->
+    <color name="common_white">#FFFFFF</color>
+    <!-- 浅灰色 -->
+    <color name="light_gray">#DDDDDD</color>
+    <!-- 浅蓝色 -->
+    <color name="common_light_blue">#039AE3</color>
+</resources>
